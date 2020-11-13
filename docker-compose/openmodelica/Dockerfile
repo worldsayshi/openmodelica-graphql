@@ -9,5 +9,9 @@ RUN wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | apt-key add
 # To verify that your key is installed correctly
 RUN apt-key fingerprint
 
+# Configure timezone to avoid interactive prompt
+ENV TZ=Europe/Kiev
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN apt update
 RUN apt install -yq openmodelica
