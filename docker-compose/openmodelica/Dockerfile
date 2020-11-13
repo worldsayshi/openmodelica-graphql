@@ -19,7 +19,8 @@ RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -yq openmodelica
 
 # Installs optional Modelica libraries (most have not been tested with OpenModelica)
-RUN apt-get install omlib-.*
-## for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do apt-get install -y "$PKG"; done
+# RUN apt-get install omlib-.*
+## RUN for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do apt-get install -y "$PKG"; done
 
 ENTRYPOINT ["/bin/bash"]
+# ENTRYPOINT ["OMShell-terminal"]
