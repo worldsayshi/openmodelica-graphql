@@ -3,6 +3,7 @@ services:
   openmodelica:
     container_name: openmodelica
     build: ./openmodelica
+    tty: true
   opcqlwrapper:
     container_name: opcqlwrapper
     build: git@github.com:AaltoIIC/OPC-UA-GraphQL-Wrapper.git
