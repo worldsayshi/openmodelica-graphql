@@ -10,4 +10,4 @@ RUN wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | apt-key add
 RUN apt-key fingerprint
 
 RUN apt update
-RUN apt install openmodelica
+RUN apt install -y openmodelica
