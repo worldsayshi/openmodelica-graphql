@@ -8,4 +8,4 @@ services:
     container_name: opcqlwrapper
     build: git@github.com:AaltoIIC/OPC-UA-GraphQL-Wrapper.git
     ports:
-      - 80:8080
+      - 8000:8000
