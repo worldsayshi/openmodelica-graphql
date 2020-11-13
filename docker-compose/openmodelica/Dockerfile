@@ -17,3 +17,5 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY ./keyboard /etc/default/keyboard
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -yq openmodelica
+
+ENTRYPOINT ["/bin/bash"]
