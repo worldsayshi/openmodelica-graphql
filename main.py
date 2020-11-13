@@ -6,6 +6,7 @@ omc = OMCSessionZMQ()
 model_path=omc.sendExpression("getInstallationDirectoryPath()") + "/share/doc/omc/testmodels/"
 mod=ModelicaSystem(model_path + "BouncingBall.mo","BouncingBall",["Modelica"])
 #mod.buildModel()
+print(mod.getQuantities())
 print(mod.simulate()) # (simflags="stopTime=3.0")
 mod.setLinearizationOptions(["stopTime=2.0"])
 print(mod.linearize())
