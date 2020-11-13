@@ -1,8 +1,8 @@
 version: "3.8"
 services:
   openmodelica:
-    name: openmodelica
+    container_name: openmodelica
     build: ./openmodelica
   opcqlwrapper:
-    name: opcqlwrapper
+    container_name: opcqlwrapper
     build: git@github.com:AaltoIIC/OPC-UA-GraphQL-Wrapper.git
