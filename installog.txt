@@ -1,0 +1,1325 @@
+root@51bc5c989bb9:/# for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do apt-get install -y "$PKG"; done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  omlib-complex-3.2.3 omlib-modelica-3.2.3 omlib-modelicaservices-3.2.3
+The following NEW packages will be installed:
+  omlib-advancednoise-1.0.1 omlib-complex-3.2.3 omlib-modelica-3.2.3 omlib-modelicaservices-3.2.3
+0 upgraded, 4 newly installed, 0 to remove and 1 not upgraded.
+Need to get 16.0 MB of archives.
+After this operation, 42.2 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-complex-3.2.3 all 3.2.3~20201013~234009~git~OM~maint~3.2.3-1 [4180 B]
+Get:2 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelicaservices-3.2.3 all 3.2.3~20201013~234009~git~OM~maint~3.2.3-1 [5348 B]
+Get:3 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelica-3.2.3 all 3.2.3~20201013~234009~git~OM~maint~3.2.3-1 [14.7 MB]
+Get:4 http://build.openmodelica.org/apt focal/stable amd64 omlib-advancednoise-1.0.1 all 1.0.1~rc1-1 [1309 kB]
+Fetched 16.0 MB in 1s (14.3 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-complex-3.2.3.
+(Reading database ... 64342 files and directories currently installed.)
+Preparing to unpack .../omlib-complex-3.2.3_3.2.3~20201013~234009~git~OM~maint~3.2.3-1_all.deb ...
+Unpacking omlib-complex-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Selecting previously unselected package omlib-modelicaservices-3.2.3.
+Preparing to unpack .../omlib-modelicaservices-3.2.3_3.2.3~20201013~234009~git~OM~maint~3.2.3-1_all.deb ...
+Unpacking omlib-modelicaservices-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Selecting previously unselected package omlib-modelica-3.2.3.
+Preparing to unpack .../omlib-modelica-3.2.3_3.2.3~20201013~234009~git~OM~maint~3.2.3-1_all.deb ...
+Unpacking omlib-modelica-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Selecting previously unselected package omlib-advancednoise-1.0.1.
+Preparing to unpack .../omlib-advancednoise-1.0.1_1.0.1~rc1-1_all.deb ...
+Unpacking omlib-advancednoise-1.0.1 (1.0.1~rc1-1) ...
+Setting up omlib-complex-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Setting up omlib-modelicaservices-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Setting up omlib-modelica-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Setting up omlib-advancednoise-1.0.1 (1.0.1~rc1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  omlib-modelica-synchronous-0.93.0
+The following NEW packages will be installed:
+  omlib-aixlib-0.4.0 omlib-modelica-synchronous-0.93.0
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+Need to get 9202 kB of archives.
+After this operation, 31.5 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelica-synchronous-0.93.0 all 0.93.0~17~gc835027-1 [949 kB]
+Get:2 http://build.openmodelica.org/apt focal/stable amd64 omlib-aixlib-0.4.0 all 0.4.0-1 [8253 kB]
+Fetched 9202 kB in 1s (17.4 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelica-synchronous-0.93.0.
+(Reading database ... 66226 files and directories currently installed.)
+Preparing to unpack .../omlib-modelica-synchronous-0.93.0_0.93.0~17~gc835027-1_all.deb ...
+Unpacking omlib-modelica-synchronous-0.93.0 (0.93.0~17~gc835027-1) ...
+Selecting previously unselected package omlib-aixlib-0.4.0.
+Preparing to unpack .../omlib-aixlib-0.4.0_0.4.0-1_all.deb ...
+Unpacking omlib-aixlib-0.4.0 (0.4.0-1) ...
+Setting up omlib-modelica-synchronous-0.93.0 (0.93.0~17~gc835027-1) ...
+Setting up omlib-aixlib-0.4.0 (0.4.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-aixlib-0.9.1 : Depends: omlib-modelica-devicedrivers-1.8.0 but it is not installable
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-algebratestsuite
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 87.3 kB of archives.
+After this operation, 490 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-algebratestsuite all 20180128~224601~git~master-1 [87.3 kB]
+Fetched 87.3 kB in 0s (508 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-algebratestsuite.
+(Reading database ... 69658 files and directories currently installed.)
+Preparing to unpack .../omlib-algebratestsuite_20180128~224601~git~master-1_all.deb ...
+Unpacking omlib-algebratestsuite (20180128~224601~git~master-1) ...
+Setting up omlib-algebratestsuite (20180128~224601~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-approxspline-1.0.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1199 kB of archives.
+After this operation, 6458 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-approxspline-1.0.0 all 1.0.0~20181110~103455~git~master-1 [1199 kB]
+Fetched 1199 kB in 0s (4461 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-approxspline-1.0.0.
+(Reading database ... 69821 files and directories currently installed.)
+Preparing to unpack .../omlib-approxspline-1.0.0_1.0.0~20181110~103455~git~master-1_all.deb ...
+Unpacking omlib-approxspline-1.0.0 (1.0.0~20181110~103455~git~master-1) ...
+Setting up omlib-approxspline-1.0.0 (1.0.0~20181110~103455~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-arduino-0.1.0 : Depends: omlib-modelica-devicedrivers-1.5.0 but it is not installable
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-biochem-1.0.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 538 kB of archives.
+After this operation, 1913 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-biochem-1.0.2 all 1.0.2-1 [538 kB]
+Fetched 538 kB in 0s (2207 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-biochem-1.0.2.
+(Reading database ... 70193 files and directories currently installed.)
+Preparing to unpack .../omlib-biochem-1.0.2_1.0.2-1_all.deb ...
+Unpacking omlib-biochem-1.0.2 (1.0.2-1) ...
+Setting up omlib-biochem-1.0.2 (1.0.2-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-bondgraph
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 14.3 kB of archives.
+After this operation, 183 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-bondgraph all 20131202~150206~git~master-1 [14.3 kB]
+Fetched 14.3 kB in 0s (95.7 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-bondgraph.
+(Reading database ... 70708 files and directories currently installed.)
+Preparing to unpack .../omlib-bondgraph_20131202~150206~git~master-1_all.deb ...
+Unpacking omlib-bondgraph (20131202~150206~git~master-1) ...
+Setting up omlib-bondgraph (20131202~150206~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-brineprop-0.5.6
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 79.8 kB of archives.
+After this operation, 552 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-brineprop-0.5.6 all 0.5.6~20201027~202350~git~master-1 [79.8 kB]
+Fetched 79.8 kB in 0s (429 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-brineprop-0.5.6.
+(Reading database ... 70712 files and directories currently installed.)
+Preparing to unpack .../omlib-brineprop-0.5.6_0.5.6~20201027~202350~git~master-1_all.deb ...
+Unpacking omlib-brineprop-0.5.6 (0.5.6~20201027~202350~git~master-1) ...
+Setting up omlib-brineprop-0.5.6 (0.5.6~20201027~202350~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-buildingcontrollib-0.1.0 : Depends: omlib-buildings-4.0.0 but it is not installable
+                                  Depends: omlib-modelica-stategraph2-2.0.3 but it is not installable
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-buildings-6.0.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 27.1 MB of archives.
+After this operation, 112 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-buildings-6.0.0 all 6.0.0-1 [27.1 MB]
+Fetched 27.1 MB in 1s (27.4 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-buildings-6.0.0.
+(Reading database ... 70931 files and directories currently installed.)
+Preparing to unpack .../omlib-buildings-6.0.0_6.0.0-1_all.deb ...
+Unpacking omlib-buildings-6.0.0 (6.0.0-1) ...
+Setting up omlib-buildings-6.0.0 (6.0.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-buildings-7.0.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 29.0 MB of archives.
+After this operation, 120 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-buildings-7.0.0 all 7.0.0-1 [29.0 MB]
+Fetched 29.0 MB in 1s (25.3 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-buildings-7.0.0.
+(Reading database ... 80944 files and directories currently installed.)
+Preparing to unpack .../omlib-buildings-7.0.0_7.0.0-1_all.deb ...
+Unpacking omlib-buildings-7.0.0 (7.0.0-1) ...
+Setting up omlib-buildings-7.0.0 (7.0.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  omlib-ncdatareader2-2.5.0
+The following NEW packages will be installed:
+  omlib-buildingsystems-2.0.0-beta omlib-ncdatareader2-2.5.0
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+Need to get 22.6 MB of archives.
+After this operation, 112 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-ncdatareader2-2.5.0 all 2.5.0-1 [3814 kB]
+Get:2 http://build.openmodelica.org/apt focal/stable amd64 omlib-buildingsystems-2.0.0-beta all 2.0.0~beta2~369~g2819493-1 [18.8 MB]
+Fetched 22.6 MB in 1s (21.1 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-ncdatareader2-2.5.0.
+(Reading database ... 91619 files and directories currently installed.)
+Preparing to unpack .../omlib-ncdatareader2-2.5.0_2.5.0-1_all.deb ...
+Unpacking omlib-ncdatareader2-2.5.0 (2.5.0-1) ...
+Selecting previously unselected package omlib-buildingsystems-2.0.0-beta.
+Preparing to unpack .../omlib-buildingsystems-2.0.0-beta_2.0.0~beta2~369~g2819493-1_all.deb ...
+Unpacking omlib-buildingsystems-2.0.0-beta (2.0.0~beta2~369~g2819493-1) ...
+Setting up omlib-ncdatareader2-2.5.0 (2.5.0-1) ...
+Setting up omlib-buildingsystems-2.0.0-beta (2.0.0~beta2~369~g2819493-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-buildsyspro-3.3.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 23.7 MB of archives.
+After this operation, 101 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-buildsyspro-3.3.0 all 3.3.0-1 [23.7 MB]
+Fetched 23.7 MB in 1s (21.6 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-buildsyspro-3.3.0.
+(Reading database ... 96490 files and directories currently installed.)
+Preparing to unpack .../omlib-buildsyspro-3.3.0_3.3.0-1_all.deb ...
+Unpacking omlib-buildsyspro-3.3.0 (3.3.0-1) ...
+Setting up omlib-buildsyspro-3.3.0 (3.3.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-chemical-1.2.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 3809 kB of archives.
+After this operation, 5338 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-chemical-1.2.0 all 1.2.0~20191217~074648~git~master-1 [3809 kB]
+Fetched 3809 kB in 0s (8408 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-chemical-1.2.0.
+(Reading database ... 101018 files and directories currently installed.)
+Preparing to unpack .../omlib-chemical-1.2.0_1.2.0~20191217~074648~git~master-1_all.deb ...
+Unpacking omlib-chemical-1.2.0 (1.2.0~20191217~074648~git~master-1) ...
+Setting up omlib-chemical-1.2.0 (1.2.0~20191217~074648~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+omlib-complex-3.2.3 is already the newest version (3.2.3~20201013~234009~git~OM~maint~3.2.3-1).
+omlib-complex-3.2.3 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-deploystructlib
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 154 kB of archives.
+After this operation, 1012 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-deploystructlib all 20191101~130731~git~v1.0-1 [154 kB]
+Fetched 154 kB in 0s (495 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-deploystructlib.
+(Reading database ... 101072 files and directories currently installed.)
+Preparing to unpack .../omlib-deploystructlib_20191101~130731~git~v1.0-1_all.deb ...
+Unpacking omlib-deploystructlib (20191101~130731~git~v1.0-1) ...
+Setting up omlib-deploystructlib (20191101~130731~git~v1.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  omlib-ibpsa-3.0.0
+The following NEW packages will be installed:
+  omlib-disheatlib-1.2 omlib-ibpsa-3.0.0
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+Need to get 12.5 MB of archives.
+After this operation, 65.2 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-ibpsa-3.0.0 all 3.0.0-1 [8750 kB]
+Get:2 http://build.openmodelica.org/apt focal/stable amd64 omlib-disheatlib-1.2 all 1.2~20200422~091252~git~master-1 [3759 kB]
+Fetched 12.5 MB in 1s (16.0 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-ibpsa-3.0.0.
+(Reading database ... 101287 files and directories currently installed.)
+Preparing to unpack .../omlib-ibpsa-3.0.0_3.0.0-1_all.deb ...
+Unpacking omlib-ibpsa-3.0.0 (3.0.0-1) ...
+Selecting previously unselected package omlib-disheatlib-1.2.
+Preparing to unpack .../omlib-disheatlib-1.2_1.2~20200422~091252~git~master-1_all.deb ...
+Unpacking omlib-disheatlib-1.2 (1.2~20200422~091252~git~master-1) ...
+Setting up omlib-ibpsa-3.0.0 (3.0.0-1) ...
+Setting up omlib-disheatlib-1.2 (1.2~20200422~091252~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-drivecontrol-3.1.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 773 kB of archives.
+After this operation, 1073 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-drivecontrol-3.1.0 all 3.1.0~20181117~174044~git~release-1 [773 kB]
+Fetched 773 kB in 0s (3113 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-drivecontrol-3.1.0.
+(Reading database ... 105187 files and directories currently installed.)
+Preparing to unpack .../omlib-drivecontrol-3.1.0_3.1.0~20181117~174044~git~release-1_all.deb ...
+Unpacking omlib-drivecontrol-3.1.0 (3.1.0~20181117~174044~git~release-1) ...
+Setting up omlib-drivecontrol-3.1.0 (3.1.0~20181117~174044~git~release-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-electromechanicaldrives-2.2.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 139 kB of archives.
+After this operation, 915 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-electromechanicaldrives-2.2.0 all 2.2.0-1 [139 kB]
+Fetched 139 kB in 0s (713 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-electromechanicaldrives-2.2.0.
+(Reading database ... 105287 files and directories currently installed.)
+Preparing to unpack .../omlib-electromechanicaldrives-2.2.0_2.2.0-1_all.deb ...
+Unpacking omlib-electromechanicaldrives-2.2.0 (2.2.0-1) ...
+Setting up omlib-electromechanicaldrives-2.2.0 (2.2.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-emoth-1.4.0 : Depends: omlib-vehicleinterfaces-1.2.4 but it is not installable
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-externalmemorylib
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 12.4 kB of archives.
+After this operation, 65.5 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-externalmemorylib all 20160809~140026~git~master-1 [12.4 kB]
+Fetched 12.4 kB in 0s (113 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-externalmemorylib.
+(Reading database ... 105428 files and directories currently installed.)
+Preparing to unpack .../omlib-externalmemorylib_20160809~140026~git~master-1_all.deb ...
+Unpacking omlib-externalmemorylib (20160809~140026~git~master-1) ...
+Setting up omlib-externalmemorylib (20160809~140026~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-externdata-2.5.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 8146 kB of archives.
+After this operation, 50.2 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-externdata-2.5.0 all 2.5.0-1 [8146 kB]
+Fetched 8146 kB in 1s (13.7 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-externdata-2.5.0.
+(Reading database ... 105432 files and directories currently installed.)
+Preparing to unpack .../omlib-externdata-2.5.0_2.5.0-1_all.deb ...
+Unpacking omlib-externdata-2.5.0 (2.5.0-1) ...
+Setting up omlib-externdata-2.5.0 (2.5.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-failuremodes-1.2.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 14.3 kB of archives.
+After this operation, 63.5 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-failuremodes-1.2.1 all 1.2.1-1 [14.3 kB]
+Fetched 14.3 kB in 0s (117 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-failuremodes-1.2.1.
+(Reading database ... 106073 files and directories currently installed.)
+Preparing to unpack .../omlib-failuremodes-1.2.1_1.2.1-1_all.deb ...
+Unpacking omlib-failuremodes-1.2.1 (1.2.1-1) ...
+Setting up omlib-failuremodes-1.2.1 (1.2.1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-faulttriggering-0.6.6
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 720 kB of archives.
+After this operation, 1887 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-faulttriggering-0.6.6 all 0.6.6-1 [720 kB]
+Fetched 720 kB in 0s (2900 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-faulttriggering-0.6.6.
+(Reading database ... 106084 files and directories currently installed.)
+Preparing to unpack .../omlib-faulttriggering-0.6.6_0.6.6-1_all.deb ...
+Unpacking omlib-faulttriggering-0.6.6 (0.6.6-1) ...
+Setting up omlib-faulttriggering-0.6.6 (0.6.6-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-feeddrivelibrary
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 48.3 kB of archives.
+After this operation, 416 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-feeddrivelibrary all 20161016~160335~git~1.0.1-1 [48.3 kB]
+Fetched 48.3 kB in 0s (261 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-feeddrivelibrary.
+(Reading database ... 106391 files and directories currently installed.)
+Preparing to unpack .../omlib-feeddrivelibrary_20161016~160335~git~1.0.1-1_all.deb ...
+Unpacking omlib-feeddrivelibrary (20161016~160335~git~1.0.1-1) ...
+Setting up omlib-feeddrivelibrary (20161016~160335~git~1.0.1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-fmitest
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 162 kB of archives.
+After this operation, 530 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-fmitest all 20181221~112405~git~master-1 [162 kB]
+Fetched 162 kB in 0s (905 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-fmitest.
+(Reading database ... 106395 files and directories currently installed.)
+Preparing to unpack .../omlib-fmitest_20181221~112405~git~master-1_all.deb ...
+Unpacking omlib-fmitest (20181221~112405~git~master-1) ...
+Setting up omlib-fmitest (20181221~112405~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-fractionalorder
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 26.2 kB of archives.
+After this operation, 283 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-fractionalorder all 20151007~174822~git~master-1 [26.2 kB]
+Fetched 26.2 kB in 0s (184 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-fractionalorder.
+(Reading database ... 106494 files and directories currently installed.)
+Preparing to unpack .../omlib-fractionalorder_20151007~174822~git~master-1_all.deb ...
+Unpacking omlib-fractionalorder (20151007~174822~git~master-1) ...
+Setting up omlib-fractionalorder (20151007~174822~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-gnu-scientificlibrary
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 660 kB of archives.
+After this operation, 3196 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-gnu-scientificlibrary all 20170111~112742~git~master-1 [660 kB]
+Fetched 660 kB in 0s (2738 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-gnu-scientificlibrary.
+(Reading database ... 106498 files and directories currently installed.)
+Preparing to unpack .../omlib-gnu-scientificlibrary_20170111~112742~git~master-1_all.deb ...
+Unpacking omlib-gnu-scientificlibrary (20170111~112742~git~master-1) ...
+Setting up omlib-gnu-scientificlibrary (20170111~112742~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-greenhouses
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 549 kB of archives.
+After this operation, 2110 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-greenhouses all 20190802~101414~git~master-1 [549 kB]
+Fetched 549 kB in 0s (2332 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-greenhouses.
+(Reading database ... 106802 files and directories currently installed.)
+Preparing to unpack .../omlib-greenhouses_20190802~101414~git~master-1_all.deb ...
+Unpacking omlib-greenhouses (20190802~101414~git~master-1) ...
+Setting up omlib-greenhouses (20190802~101414~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-hansermodelica-1.1.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 186 kB of archives.
+After this operation, 666 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-hansermodelica-1.1.0 all 1.1.0-1 [186 kB]
+Fetched 186 kB in 0s (842 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-hansermodelica-1.1.0.
+(Reading database ... 107076 files and directories currently installed.)
+Preparing to unpack .../omlib-hansermodelica-1.1.0_1.1.0-1_all.deb ...
+Unpacking omlib-hansermodelica-1.1.0 (1.1.0-1) ...
+Setting up omlib-hansermodelica-1.1.0 (1.1.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-helmholtzmedia
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 85.9 kB of archives.
+After this operation, 863 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-helmholtzmedia all 20200910~102425~git~master-1 [85.9 kB]
+Fetched 85.9 kB in 0s (465 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-helmholtzmedia.
+(Reading database ... 107277 files and directories currently installed.)
+Preparing to unpack .../omlib-helmholtzmedia_20200910~102425~git~master-1_all.deb ...
+Unpacking omlib-helmholtzmedia (20200910~102425~git~master-1) ...
+Setting up omlib-helmholtzmedia (20200910~102425~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+omlib-ibpsa-3.0.0 is already the newest version (3.0.0-1).
+omlib-ibpsa-3.0.0 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-ideas-2.1.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 31.3 MB of archives.
+After this operation, 217 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-ideas-2.1.0 all 2.1.0-1 [31.3 MB]
+Fetched 31.3 MB in 1s (24.5 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-ideas-2.1.0.
+(Reading database ... 107654 files and directories currently installed.)
+Preparing to unpack .../omlib-ideas-2.1.0_2.1.0-1_all.deb ...
+Unpacking omlib-ideas-2.1.0 (2.1.0-1) ...
+Setting up omlib-ideas-2.1.0 (2.1.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-industrialcontrolsystems-1.1.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2011 kB of archives.
+After this operation, 3515 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-industrialcontrolsystems-1.1.0 all 1.1.0-1 [2011 kB]
+Fetched 2011 kB in 0s (6662 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-industrialcontrolsystems-1.1.0.
+(Reading database ... 112990 files and directories currently installed.)
+Preparing to unpack .../omlib-industrialcontrolsystems-1.1.0_1.1.0-1_all.deb ...
+Unpacking omlib-industrialcontrolsystems-1.1.0 (1.1.0-1) ...
+Setting up omlib-industrialcontrolsystems-1.1.0 (1.1.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-ipsl-1.1.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 917 kB of archives.
+After this operation, 3685 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-ipsl-1.1.0 all 1.1.0~38~ge0e3ea0-1 [917 kB]
+Fetched 917 kB in 0s (2767 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-ipsl-1.1.0.
+(Reading database ... 113533 files and directories currently installed.)
+Preparing to unpack .../omlib-ipsl-1.1.0_1.1.0~38~ge0e3ea0-1_all.deb ...
+Unpacking omlib-ipsl-1.1.0 (1.1.0~38~ge0e3ea0-1) ...
+Setting up omlib-ipsl-1.1.0 (1.1.0~38~ge0e3ea0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-keywordio-0.9.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 153 kB of archives.
+After this operation, 271 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-keywordio-0.9.0 all 0.9.0-1 [153 kB]
+Fetched 153 kB in 0s (842 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-keywordio-0.9.0.
+(Reading database ... 114309 files and directories currently installed.)
+Preparing to unpack .../omlib-keywordio-0.9.0_0.9.0-1_all.deb ...
+Unpacking omlib-keywordio-0.9.0 (0.9.0-1) ...
+Setting up omlib-keywordio-0.9.0 (0.9.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-libras
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 44.9 kB of archives.
+After this operation, 353 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-libras all 20190213~093248~git~master-1 [44.9 kB]
+Fetched 44.9 kB in 0s (288 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-libras.
+(Reading database ... 114374 files and directories currently installed.)
+Preparing to unpack .../omlib-libras_20190213~093248~git~master-1_all.deb ...
+Unpacking omlib-libras (20190213~093248~git~master-1) ...
+Setting up omlib-libras (20190213~093248~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-linearmpc-1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 25.3 kB of archives.
+After this operation, 210 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-linearmpc-1 all 1.0-1 [25.3 kB]
+Fetched 25.3 kB in 0s (217 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-linearmpc-1.
+(Reading database ... 114486 files and directories currently installed.)
+Preparing to unpack .../omlib-linearmpc-1_1.0-1_all.deb ...
+Unpacking omlib-linearmpc-1 (1.0-1) ...
+Setting up omlib-linearmpc-1 (1.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-mev-1.0.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 18.8 kB of archives.
+After this operation, 110 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-mev-1.0.1 all 1.0.1-1 [18.8 kB]
+Fetched 18.8 kB in 0s (128 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-mev-1.0.1.
+(Reading database ... 114490 files and directories currently installed.)
+Preparing to unpack .../omlib-mev-1.0.1_1.0.1-1_all.deb ...
+Unpacking omlib-mev-1.0.1 (1.0.1-1) ...
+Setting up omlib-mev-1.0.1 (1.0.1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+omlib-modelica-3.2.3 is already the newest version (3.2.3~20201013~234009~git~OM~maint~3.2.3-1).
+omlib-modelica-3.2.3 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modelica-devicedrivers-1.8.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 7809 kB of archives.
+After this operation, 33.8 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelica-devicedrivers-1.8.2 all 1.8.2-1 [7809 kB]
+Fetched 7809 kB in 1s (15.6 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelica-devicedrivers-1.8.2.
+(Reading database ... 114496 files and directories currently installed.)
+Preparing to unpack .../omlib-modelica-devicedrivers-1.8.2_1.8.2-1_all.deb ...
+Unpacking omlib-modelica-devicedrivers-1.8.2 (1.8.2-1) ...
+Setting up omlib-modelica-devicedrivers-1.8.2 (1.8.2-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-modelica-linearsystems2-2.4.0 : Depends: omlib-modelica-trunk but it is not installable
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modelica-requirements-0.6
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2399 kB of archives.
+After this operation, 3514 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelica-requirements-0.6 all 0.6~20170818~163012~git~master-1 [2399 kB]
+Fetched 2399 kB in 0s (6397 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelica-requirements-0.6.
+(Reading database ... 115093 files and directories currently installed.)
+Preparing to unpack .../omlib-modelica-requirements-0.6_0.6~20170818~163012~git~master-1_all.deb ...
+Unpacking omlib-modelica-requirements-0.6 (0.6~20170818~163012~git~master-1) ...
+Setting up omlib-modelica-requirements-0.6 (0.6~20170818~163012~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+omlib-modelica-synchronous-0.93.0 is already the newest version (0.93.0~17~gc835027-1).
+omlib-modelica-synchronous-0.93.0 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modelicaads
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 21.5 kB of archives.
+After this operation, 143 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelicaads all 20170921~141505~git~v1.0.1-1 [21.5 kB]
+Fetched 21.5 kB in 0s (200 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelicaads.
+(Reading database ... 115337 files and directories currently installed.)
+Preparing to unpack .../omlib-modelicaads_20170921~141505~git~v1.0.1-1_all.deb ...
+Unpacking omlib-modelicaads (20170921~141505~git~v1.0.1-1) ...
+Setting up omlib-modelicaads (20170921~141505~git~v1.0.1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modelicabyexample-0.5.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 853 kB of archives.
+After this operation, 8004 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelicabyexample-0.5.0 all 0.5.0~154~g6044b75-1 [853 kB]
+Fetched 853 kB in 0s (3700 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelicabyexample-0.5.0.
+(Reading database ... 115388 files and directories currently installed.)
+Preparing to unpack .../omlib-modelicabyexample-0.5.0_0.5.0~154~g6044b75-1_all.deb ...
+Unpacking omlib-modelicabyexample-0.5.0 (0.5.0~154~g6044b75-1) ...
+Setting up omlib-modelicabyexample-0.5.0 (0.5.0~154~g6044b75-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modelicacompliance-3.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 358 kB of archives.
+After this operation, 1955 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelicacompliance-3.2 all 3.2~20191002~130415~git~master-1 [358 kB]
+Fetched 358 kB in 0s (1836 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelicacompliance-3.2.
+(Reading database ... 116038 files and directories currently installed.)
+Preparing to unpack .../omlib-modelicacompliance-3.2_3.2~20191002~130415~git~master-1_all.deb ...
+Unpacking omlib-modelicacompliance-3.2 (3.2~20191002~130415~git~master-1) ...
+Setting up omlib-modelicacompliance-3.2 (3.2~20191002~130415~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modelicareference
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 75.4 kB of archives.
+After this operation, 368 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelicareference all 20201013~234009~git~OM~maint~3.2.3-1 [75.4 kB]
+Fetched 75.4 kB in 0s (552 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelicareference.
+(Reading database ... 117397 files and directories currently installed.)
+Preparing to unpack .../omlib-modelicareference_20201013~234009~git~OM~maint~3.2.3-1_all.deb ...
+Unpacking omlib-modelicareference (20201013~234009~git~OM~maint~3.2.3-1) ...
+Setting up omlib-modelicareference (20201013~234009~git~OM~maint~3.2.3-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+omlib-modelicaservices-3.2.3 is already the newest version (3.2.3~20201013~234009~git~OM~maint~3.2.3-1).
+omlib-modelicaservices-3.2.3 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modelicatest-3.2.3
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 163 kB of archives.
+After this operation, 2190 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modelicatest-3.2.3 all 3.2.3~20201013~234009~git~OM~maint~3.2.3-1 [163 kB]
+Fetched 163 kB in 0s (781 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modelicatest-3.2.3.
+(Reading database ... 117426 files and directories currently installed.)
+Preparing to unpack .../omlib-modelicatest-3.2.3_3.2.3~20201013~234009~git~OM~maint~3.2.3-1_all.deb ...
+Unpacking omlib-modelicatest-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Setting up omlib-modelicatest-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-modpowersystems
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 105 kB of archives.
+After this operation, 1486 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-modpowersystems all 20200324~112731~git~master-1 [105 kB]
+Fetched 105 kB in 0s (583 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-modpowersystems.
+(Reading database ... 117637 files and directories currently installed.)
+Preparing to unpack .../omlib-modpowersystems_20200324~112731~git~master-1_all.deb ...
+Unpacking omlib-modpowersystems (20200324~112731~git~master-1) ...
+Setting up omlib-modpowersystems (20200324~112731~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-mvemlib-1.0.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 185 kB of archives.
+After this operation, 1425 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-mvemlib-1.0.1 all 1.0.1-1 [185 kB]
+Fetched 185 kB in 0s (813 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-mvemlib-1.0.1.
+(Reading database ... 118174 files and directories currently installed.)
+Preparing to unpack .../omlib-mvemlib-1.0.1_1.0.1-1_all.deb ...
+Unpacking omlib-mvemlib-1.0.1 (1.0.1-1) ...
+Setting up omlib-mvemlib-1.0.1 (1.0.1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+omlib-ncdatareader2-2.5.0 is already the newest version (2.5.0-1).
+omlib-ncdatareader2-2.5.0 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-nuclear
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 24.1 kB of archives.
+After this operation, 271 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-nuclear all 20160806~130022~git~master-1 [24.1 kB]
+Fetched 24.1 kB in 0s (231 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-nuclear.
+(Reading database ... 118262 files and directories currently installed.)
+Preparing to unpack .../omlib-nuclear_20160806~130022~git~master-1_all.deb ...
+Unpacking omlib-nuclear (20160806~130022~git~master-1) ...
+Setting up omlib-nuclear (20160806~130022~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-obsoletemodelica3-3.2.3
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 23.0 kB of archives.
+After this operation, 174 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-obsoletemodelica3-3.2.3 all 3.2.3~20201013~234009~git~OM~maint~3.2.3-1 [23.0 kB]
+Fetched 23.0 kB in 0s (187 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-obsoletemodelica3-3.2.3.
+(Reading database ... 118266 files and directories currently installed.)
+Preparing to unpack .../omlib-obsoletemodelica3-3.2.3_3.2.3~20201013~234009~git~OM~maint~3.2.3-1_all.deb ...
+Unpacking omlib-obsoletemodelica3-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Setting up omlib-obsoletemodelica3-3.2.3 (3.2.3~20201013~234009~git~OM~maint~3.2.3-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-openbldc
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 47.9 kB of archives.
+After this operation, 457 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-openbldc all 20170913~145654~git~master-1 [47.9 kB]
+Fetched 47.9 kB in 0s (262 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-openbldc.
+(Reading database ... 118270 files and directories currently installed.)
+Preparing to unpack .../omlib-openbldc_20170913~145654~git~master-1_all.deb ...
+Unpacking omlib-openbldc (20170913~145654~git~master-1) ...
+Setting up omlib-openbldc (20170913~145654~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-openipsl-1.5.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 241 kB of archives.
+After this operation, 1885 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-openipsl-1.5.0 all 1.5.0-1 [241 kB]
+Fetched 241 kB in 0s (932 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-openipsl-1.5.0.
+(Reading database ... 118413 files and directories currently installed.)
+Preparing to unpack .../omlib-openipsl-1.5.0_1.5.0-1_all.deb ...
+Unpacking omlib-openipsl-1.5.0 (1.5.0-1) ...
+Setting up omlib-openipsl-1.5.0 (1.5.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-optimisers-0.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 50.5 kB of archives.
+After this operation, 274 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-optimisers-0.1 all 0.1~20180116~104125~git~master-1 [50.5 kB]
+Fetched 50.5 kB in 0s (324 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-optimisers-0.1.
+(Reading database ... 119022 files and directories currently installed.)
+Preparing to unpack .../omlib-optimisers-0.1_0.1~20180116~104125~git~master-1_all.deb ...
+Unpacking omlib-optimisers-0.1 (0.1~20180116~104125~git~master-1) ...
+Setting up omlib-optimisers-0.1 (0.1~20180116~104125~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-photovoltaics-1.6.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 620 kB of archives.
+After this operation, 3577 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-photovoltaics-1.6.0 all 1.6.0-1 [620 kB]
+Fetched 620 kB in 0s (2048 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-photovoltaics-1.6.0.
+(Reading database ... 119092 files and directories currently installed.)
+Preparing to unpack .../omlib-photovoltaics-1.6.0_1.6.0-1_all.deb ...
+Unpacking omlib-photovoltaics-1.6.0 (1.6.0-1) ...
+Setting up omlib-photovoltaics-1.6.0 (1.6.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-photovoltaics-tgm-1.6.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 7488 B of archives.
+After this operation, 123 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-photovoltaics-tgm-1.6.0 all 1.6.0-1 [7488 B]
+Fetched 7488 B in 0s (79.2 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-photovoltaics-tgm-1.6.0.
+(Reading database ... 119276 files and directories currently installed.)
+Preparing to unpack .../omlib-photovoltaics-tgm-1.6.0_1.6.0-1_all.deb ...
+Unpacking omlib-photovoltaics-tgm-1.6.0 (1.6.0-1) ...
+Setting up omlib-photovoltaics-tgm-1.6.0 (1.6.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-physiolibrary-2.3.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 13.9 MB of archives.
+After this operation, 16.9 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-physiolibrary-2.3.1 all 2.3.1-1 [13.9 MB]
+Fetched 13.9 MB in 1s (21.0 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-physiolibrary-2.3.1.
+(Reading database ... 119301 files and directories currently installed.)
+Preparing to unpack .../omlib-physiolibrary-2.3.1_2.3.1-1_all.deb ...
+Unpacking omlib-physiolibrary-2.3.1 (2.3.1-1) ...
+Setting up omlib-physiolibrary-2.3.1 (2.3.1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-physiomodel-1.0.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 6014 kB of archives.
+After this operation, 17.8 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-physiomodel-1.0.0 all 1.0.0-1 [6014 kB]
+Fetched 6014 kB in 1s (5739 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-physiomodel-1.0.0.
+(Reading database ... 119619 files and directories currently installed.)
+Preparing to unpack .../omlib-physiomodel-1.0.0_1.0.0-1_all.deb ...
+Unpacking omlib-physiomodel-1.0.0 (1.0.0-1) ...
+Setting up omlib-physiomodel-1.0.0 (1.0.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-planarmechanics-1.5.0 : Depends: omlib-modelica-trunk but it is not installable
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-planarmechanicstest-1.5.0 : Depends: omlib-modelica-trunk but it is not installable
+                                   Depends: omlib-planarmechanics-1.5.0 but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-pnlib-2.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1322 kB of archives.
+After this operation, 2226 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-pnlib-2.2 all 2.2~1~g3839f6c-1 [1322 kB]
+Fetched 1322 kB in 0s (3557 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-pnlib-2.2.
+(Reading database ... 119666 files and directories currently installed.)
+Preparing to unpack .../omlib-pnlib-2.2_2.2~1~g3839f6c-1_all.deb ...
+Unpacking omlib-pnlib-2.2 (2.2~1~g3839f6c-1) ...
+Setting up omlib-pnlib-2.2 (2.2~1~g3839f6c-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-powergrids-1.0.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 210 kB of archives.
+After this operation, 1027 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-powergrids-1.0.0 all 1.0.0-1 [210 kB]
+Fetched 210 kB in 0s (1217 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-powergrids-1.0.0.
+(Reading database ... 119973 files and directories currently installed.)
+Preparing to unpack .../omlib-powergrids-1.0.0_1.0.0-1_all.deb ...
+Unpacking omlib-powergrids-1.0.0 (1.0.0-1) ...
+Setting up omlib-powergrids-1.0.0 (1.0.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-powersystems-1.0.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 955 kB of archives.
+After this operation, 2996 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-powersystems-1.0.0 all 1.0.0-1 [955 kB]
+Fetched 955 kB in 1s (880 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-powersystems-1.0.0.
+(Reading database ... 120260 files and directories currently installed.)
+Preparing to unpack .../omlib-powersystems-1.0.0_1.0.0-1_all.deb ...
+Unpacking omlib-powersystems-1.0.0 (1.0.0-1) ...
+Setting up omlib-powersystems-1.0.0 (1.0.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-powersystems-latest
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 955 kB of archives.
+After this operation, 2996 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-powersystems-latest all 20181227~194150~git~master-1 [955 kB]
+Fetched 955 kB in 0s (2997 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-powersystems-latest.
+(Reading database ... 120420 files and directories currently installed.)
+Preparing to unpack .../omlib-powersystems-latest_20181227~194150~git~master-1_all.deb ...
+Unpacking omlib-powersystems-latest (20181227~194150~git~master-1) ...
+Setting up omlib-powersystems-latest (20181227~194150~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-pvsystems-0.6.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 10.2 MB of archives.
+After this operation, 26.7 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-pvsystems-0.6.2 all 0.6.2-1 [10.2 MB]
+Fetched 10.2 MB in 1s (7023 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-pvsystems-0.6.2.
+(Reading database ... 120580 files and directories currently installed.)
+Preparing to unpack .../omlib-pvsystems-0.6.2_0.6.2-1_all.deb ...
+Unpacking omlib-pvsystems-0.6.2 (0.6.2-1) ...
+Setting up omlib-pvsystems-0.6.2 (0.6.2-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ omlib-realtimecoordinationlibrary-1.0.2 : Depends: omlib-modelica-stategraph2-2.0.3 but it is not installable
+E: Unable to correct problems, you have held broken packages.
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-scalabletestsuite-1.11.5
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1718 kB of archives.
+After this operation, 8285 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-scalabletestsuite-1.11.5 all 1.11.5-1 [1718 kB]
+Fetched 1718 kB in 0s (5131 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-scalabletestsuite-1.11.5.
+(Reading database ... 120769 files and directories currently installed.)
+Preparing to unpack .../omlib-scalabletestsuite-1.11.5_1.11.5-1_all.deb ...
+Unpacking omlib-scalabletestsuite-1.11.5 (1.11.5-1) ...
+Setting up omlib-scalabletestsuite-1.11.5 (1.11.5-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-servomechanisms-1.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 714 kB of archives.
+After this operation, 1177 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-servomechanisms-1.0 all 1.0~20181206~130737~git~master-1 [714 kB]
+Fetched 714 kB in 1s (1193 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-servomechanisms-1.0.
+(Reading database ... 120864 files and directories currently installed.)
+Preparing to unpack .../omlib-servomechanisms-1.0_1.0~20181206~130737~git~master-1_all.deb ...
+Unpacking omlib-servomechanisms-1.0 (1.0~20181206~130737~git~master-1) ...
+Setting up omlib-servomechanisms-1.0 (1.0~20181206~130737~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-solartherm-0.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 4971 kB of archives.
+After this operation, 27.7 MB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-solartherm-0.2 all 0.2~20201022~025131~git~master-1 [4971 kB]
+Fetched 4971 kB in 5s (911 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-solartherm-0.2.
+(Reading database ... 121013 files and directories currently installed.)
+Preparing to unpack .../omlib-solartherm-0.2_0.2~20201022~025131~git~master-1_all.deb ...
+Unpacking omlib-solartherm-0.2 (0.2~20201022~025131~git~master-1) ...
+Setting up omlib-solartherm-0.2 (0.2~20201022~025131~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-soltermica
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 225 kB of archives.
+After this operation, 2111 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-soltermica all 20180714~104928~git~master-1 [225 kB]
+Fetched 225 kB in 0s (708 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-soltermica.
+(Reading database ... 122017 files and directories currently installed.)
+Preparing to unpack .../omlib-soltermica_20180714~104928~git~master-1_all.deb ...
+Unpacking omlib-soltermica (20180714~104928~git~master-1) ...
+Setting up omlib-soltermica (20180714~104928~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-systemdynamics-2.1.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 378 kB of archives.
+After this operation, 1641 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-systemdynamics-2.1.1 all 2.1.1~2~g2f6bd93-1 [378 kB]
+Fetched 378 kB in 1s (387 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-systemdynamics-2.1.1.
+(Reading database ... 122336 files and directories currently installed.)
+Preparing to unpack .../omlib-systemdynamics-2.1.1_2.1.1~2~g2f6bd93-1_all.deb ...
+Unpacking omlib-systemdynamics-2.1.1 (2.1.1~2~g2f6bd93-1) ...
+Setting up omlib-systemdynamics-2.1.1 (2.1.1~2~g2f6bd93-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-testderivative
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 9490 B of archives.
+After this operation, 41.0 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-testderivative all 20191212~010403~git~master-1 [9490 B]
+Fetched 9490 B in 0s (26.0 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-testderivative.
+(Reading database ... 122410 files and directories currently installed.)
+Preparing to unpack .../omlib-testderivative_20191212~010403~git~master-1_all.deb ...
+Unpacking omlib-testderivative (20191212~010403~git~master-1) ...
+Setting up omlib-testderivative (20191212~010403~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-thermalseparation-0.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2299 kB of archives.
+After this operation, 7131 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-thermalseparation-0.2 all 0.2~20200823~172857~git~master-1 [2299 kB]
+Fetched 2299 kB in 1s (4575 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-thermalseparation-0.2.
+(Reading database ... 122414 files and directories currently installed.)
+Preparing to unpack .../omlib-thermalseparation-0.2_0.2~20200823~172857~git~master-1_all.deb ...
+Unpacking omlib-thermalseparation-0.2 (0.2~20200823~172857~git~master-1) ...
+Setting up omlib-thermalseparation-0.2 (0.2~20200823~172857~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-thermopower-3.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 214 kB of archives.
+After this operation, 2607 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-thermopower-3.1 all 3.1~20201019~013733~git~master-1 [214 kB]
+Fetched 214 kB in 0s (814 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-thermopower-3.1.
+(Reading database ... 123450 files and directories currently installed.)
+Preparing to unpack .../omlib-thermopower-3.1_3.1~20201019~013733~git~master-1_all.deb ...
+Unpacking omlib-thermopower-3.1 (3.1~20201019~013733~git~master-1) ...
+Setting up omlib-thermopower-3.1 (3.1~20201019~013733~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-thermosyspro-3.1
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 307 kB of archives.
+After this operation, 3852 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-thermosyspro-3.1 all 3.1+OSR~18~gdb81ae1-1 [307 kB]
+Fetched 307 kB in 0s (1528 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-thermosyspro-3.1.
+(Reading database ... 123467 files and directories currently installed.)
+Preparing to unpack .../omlib-thermosyspro-3.1_3.1+OSR~18~gdb81ae1-1_all.deb ...
+Unpacking omlib-thermosyspro-3.1 (3.1+OSR~18~gdb81ae1-1) ...
+Setting up omlib-thermosyspro-3.1 (3.1+OSR~18~gdb81ae1-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-thermosyspro-3.2
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 415 kB of archives.
+After this operation, 5442 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-thermosyspro-3.2 all 3.2~20191212~010403~git~master-1 [415 kB]
+Fetched 415 kB in 0s (1546 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-thermosyspro-3.2.
+(Reading database ... 124129 files and directories currently installed.)
+Preparing to unpack .../omlib-thermosyspro-3.2_3.2~20191212~010403~git~master-1_all.deb ...
+Unpacking omlib-thermosyspro-3.2 (3.2~20191212~010403~git~master-1) ...
+Setting up omlib-thermosyspro-3.2 (3.2~20191212~010403~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-thermosysprologo
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 9782 B of archives.
+After this operation, 46.1 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-thermosysprologo all 20191212~010403~git~master-1 [9782 B]
+Fetched 9782 B in 0s (87.1 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-thermosysprologo.
+(Reading database ... 125326 files and directories currently installed.)
+Preparing to unpack .../omlib-thermosysprologo_20191212~010403~git~master-1_all.deb ...
+Unpacking omlib-thermosysprologo (20191212~010403~git~master-1) ...
+Setting up omlib-thermosysprologo (20191212~010403~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-vehicleinterfaces-1.2.5
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 2234 kB of archives.
+After this operation, 3277 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-vehicleinterfaces-1.2.5 all 1.2.5-1 [2234 kB]
+Fetched 2234 kB in 0s (4581 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-vehicleinterfaces-1.2.5.
+(Reading database ... 125330 files and directories currently installed.)
+Preparing to unpack .../omlib-vehicleinterfaces-1.2.5_1.2.5-1_all.deb ...
+Unpacking omlib-vehicleinterfaces-1.2.5 (1.2.5-1) ...
+Setting up omlib-vehicleinterfaces-1.2.5 (1.2.5-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-vvdrlib
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 11.1 kB of archives.
+After this operation, 54.3 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-vvdrlib all 20170912~142014~git~master-1 [11.1 kB]
+Fetched 11.1 kB in 0s (120 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-vvdrlib.
+(Reading database ... 125444 files and directories currently installed.)
+Preparing to unpack .../omlib-vvdrlib_20170912~142014~git~master-1_all.deb ...
+Unpacking omlib-vvdrlib (20170912~142014~git~master-1) ...
+Setting up omlib-vvdrlib (20170912~142014~git~master-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-wastewater-2.1.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 135 kB of archives.
+After this operation, 4219 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-wastewater-2.1.0 all 2.1.0-1 [135 kB]
+Fetched 135 kB in 0s (595 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-wastewater-2.1.0.
+(Reading database ... 125463 files and directories currently installed.)
+Preparing to unpack .../omlib-wastewater-2.1.0_2.1.0-1_all.deb ...
+Unpacking omlib-wastewater-2.1.0 (2.1.0-1) ...
+Setting up omlib-wastewater-2.1.0 (2.1.0-1) ...
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  omlib-windpowerplants-1.2.0
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 522 kB of archives.
+After this operation, 1702 kB of additional disk space will be used.
+Get:1 http://build.openmodelica.org/apt focal/stable amd64 omlib-windpowerplants-1.2.0 all 1.2.0-1 [522 kB]
+Fetched 522 kB in 0s (2266 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package omlib-windpowerplants-1.2.0.
+(Reading database ... 125534 files and directories currently installed.)
+Preparing to unpack .../omlib-windpowerplants-1.2.0_1.2.0-1_all.deb ...
+Unpacking omlib-windpowerplants-1.2.0 (1.2.0-1) ...
+Setting up omlib-windpowerplants-1.2.0 (1.2.0-1) ...
