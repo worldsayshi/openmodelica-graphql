@@ -23,6 +23,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt install -yq openmodelica
 RUN for PKG in `apt-cache search "omlib-.*" | cut -d" " -f1`; do apt-get install -y "$PKG"; done
 
 # Since the above doesn't seem to work:
+RUN apt-get install git
 RUN git clone --single-branch --branch maintenance/v1.16 git@github.com:OpenModelica/OpenModelica.git /tmp/openmodelica-repo
 COPY /tmp/openmodelica-repo/OMCompiler/Examples/* /usr/share/doc/omc/testmodels/
 
