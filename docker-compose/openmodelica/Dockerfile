@@ -27,8 +27,8 @@ RUN apt-get install -y git
 #RUN mkdir ~/.ssh
 #RUN touch ~/.ssh/known_hosts
 #RUN echo "github.com,140.82.118.3 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" >> ~/.ssh/known_hosts
-RUN git clone --single-branch --branch maintenance/v1.16 https://github.com/OpenModelica/OpenModelica.git # git@github.com:OpenModelica/OpenModelica.git /tmp/openmodelica-repo
-# COPY /tmp/openmodelica-repo/OMCompiler/Examples/* /usr/share/doc/omc/testmodels/
+RUN git clone --single-branch --branch maintenance/v1.16 https://github.com/OpenModelica/OpenModelica.git /tmp/openmodelica-repo # git@github.com:OpenModelica/OpenModelica.git
+COPY /tmp/openmodelica-repo/OMCompiler/Examples/* /usr/share/doc/omc/testmodels/
 
 ENTRYPOINT ["/bin/bash"]
 # ENTRYPOINT ["OMShell-terminal"]
