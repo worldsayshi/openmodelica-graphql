@@ -30,5 +30,14 @@ RUN git clone --single-branch --branch maintenance/v1.16 https://github.com/Open
 # COPY /tmp/openmodelica-repo/OMCompiler/Examples/* /usr/share/doc/omc/testmodels/
 RUN cp /tmp/openmodelica-repo/OMCompiler/Examples/* /usr/share/doc/omc/testmodels/
 
-ENTRYPOINT ["/bin/bash"]
+
+# Install Node
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
+RUN apt-get install nodejs
+
+COPY api-server ~/api-server
+RUN cd api-server && \
+    npm install
+
+ENTRYPOINT ["node", "~/api-server/index.js"]
 # ENTRYPOINT ["OMShell-terminal"]
