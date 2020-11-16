@@ -25,7 +25,7 @@ app.route("/model/:name")
       console.log("Writing content to file: " + req.body);
       console.log();
       fs.writeSync(fileHandle, req.body);
-      compile("models/BouncingBall.mo"); // filepath
+      compile(filepath);
       res.send('Putting model with name: ' + name);
     } else {
       console.log("Unexpected content");
