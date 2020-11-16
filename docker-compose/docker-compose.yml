@@ -4,6 +4,8 @@ services:
     container_name: openmodelica
     build: ./openmodelica
     tty: true
+    ports:
+      - 3000:3000
   opcqlwrapper:
     container_name: opcqlwrapper
     build: https://github.com/AaltoIIC/OPC-UA-GraphQL-Wrapper.git

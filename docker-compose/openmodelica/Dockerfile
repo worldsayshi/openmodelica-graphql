@@ -32,12 +32,13 @@ RUN cp /tmp/openmodelica-repo/OMCompiler/Examples/* /usr/share/doc/omc/testmodel
 
 
 # Install Node
+RUN apt-get install curl -y
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
-RUN apt-get install nodejs
+RUN apt-get install nodejs -y
 
-COPY api-server ~/api-server
+COPY api-server ./api-server
 RUN cd api-server && \
     npm install
 
-ENTRYPOINT ["node", "~/api-server/index.js"]
+ENTRYPOINT ["node", "./api-server/index.js"]
 # ENTRYPOINT ["OMShell-terminal"]
