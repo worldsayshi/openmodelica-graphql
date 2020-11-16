@@ -2,26 +2,45 @@
 
 const { spawn } = require('child_process');
 const path = require("path");
+const process = require('process');
 
 /*
  $ omc +s modelname.mo
  $ make -f modelname.makefile
  */
 
-const compile = (filepath) => {
-  let process = spawn("./compile_model.sh", [filepath]);
+const run = (...spawnargs) => {
+  let cprocess = spawn(...spawnargs);
 
-  process.stdout.on('data', (data) => {
+  cprocess.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
   });
 
-  process.stderr.on('data', (data) => {
+  cprocess.stderr.on('data', (data) => {
     console.error(`stderr: ${data}`);
   });
 
-  process.on('close', (code) => {
+  cprocess.on('close', (code) => {
     console.log(`child process exited with code ${code}`);
   });
+
+  function stopChildProc(){
+    cprocess.kill("SIGINT");
+    process.exit(0);
+  }
+
+  process.on('exit', stopChildProc);
+  process.on('SIGINT', stopChildProc);
+
+  return cprocess;
 };
 
-module.exports = {compile};
+const compile = (filepath) => {
+  run("./compile_model.sh", [filepath]);
+};
+
+const startModel = (filepath) => {
+  return run(filepath);
+};
+
+module.exports = {compile, startModel};
