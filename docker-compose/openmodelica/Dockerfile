@@ -33,7 +33,7 @@ RUN cp /tmp/openmodelica-repo/OMCompiler/Examples/* /usr/share/doc/omc/testmodel
 
 # Install Node
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
-RUN apt-get install nodejs
+RUN apt-get install nodejs -y
 
 COPY api-server ~/api-server
 RUN cd api-server && \

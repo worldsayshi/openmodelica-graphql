@@ -2,7 +2,7 @@
 const express = require('express')
 const fs = require('fs');
 
-const {compile} = require('./process-util');
+const {compile, startModel} = require('./process-util');
 const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
@@ -11,6 +11,10 @@ fs.mkdirSync("models", { recursive: true });
 
 // app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
+
+let modelsRuntime = {
+
+};
 
 app.route("/model/:name")
   /**
@@ -26,6 +30,7 @@ app.route("/model/:name")
       console.log();
       fs.writeSync(fileHandle, req.body);
       compile(filepath);
+      modelsRuntime[name] = modelsRuntime[name] || {};
       res.send('Putting model with name: ' + name);
     } else {
       console.log("Unexpected content");
@@ -35,10 +40,29 @@ app.route("/model/:name")
     Retrieve a model
   */
   .get((req, res) => {
+    let name = req.params.name;
     let fileHandle = fs.openSync("models/"+name);
     let contents = fs.readlinkSync(fileHandle);
     res.send('Model contents: ' + contents);
   });
+
+app.post("/model/:name/start", (req, res) => {
+  let name = req.params.name;
+  if(!(typeof modelsRuntime[name] === 'object' && yourVariable !== null
+)) {
+  res.status(400).send({
+    message: 'Not a known model: '+name
+  });
+  return;
+}
+  let filepath = "output/"+name;
+  let process = startModel(filepath);
+  modelsRuntime[name] = {
+    ...modelsRuntime[name],
+    process,
+  };
+  console.log("Model started: " + name);
+});
 
 /**
   Retrieve a list of models
