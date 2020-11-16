@@ -48,27 +48,38 @@ app.route("/model/:name")
 
 app.post("/model/:name/start", (req, res) => {
   let name = req.params.name;
-  if(!(typeof modelsRuntime[name] === 'object' && yourVariable !== null
-)) {
-  res.status(400).send({
-    message: 'Not a known model: '+name
-  });
-  return;
-}
+  if(!(typeof modelsRuntime[name] === 'object' && yourVariable !== null)) {
+    res.status(400).send({
+      message: 'Not a known model: '+name
+    });
+    return;
+  }
   let filepath = "output/"+name;
   let process = startModel(filepath);
   modelsRuntime[name] = {
     ...modelsRuntime[name],
     process,
   };
-  console.log("Model started: " + name);
+  res.send("Model started: " + name);
+});
+
+app.post("/model/:name/stop", (req, res) => {
+  let name = req.params.name;
+  if(!(typeof modelsRuntime[name] === 'object' && yourVariable !== null)) {
+    res.status(400).send({
+      message: 'Not a known model: '+name
+    });
+    return;
+  }
+  modelsRuntime[name].process.kill();
+  res.send("Model stopped: " + name);
 });
 
 /**
   Retrieve a list of models
 */
 app.get('/models', (req, res) => {
-  res.send('Hello World!');
+  res.send(Object.keys(modelsRuntime));
 });
 
 app.listen(port, () => {
