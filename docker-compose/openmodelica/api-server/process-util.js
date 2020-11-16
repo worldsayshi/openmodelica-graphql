@@ -1,9 +1,16 @@
 
 
 const { spawn } = require('child_process');
+const path = require("path");
 
-const compile = (surceFileHandle) => {
-  let process = spawn("echo", ["testing"]);
+/*
+ $ omc +s modelname.mo
+ $ make -f modelname.makefile
+ */
+
+const compile = (filepath) => {
+  let process = spawn("./compile_model.sh", [filepath]);
+
   process.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
   });

@@ -10,10 +10,9 @@ RUN wget -q http://build.openmodelica.org/apt/openmodelica.asc -O- | apt-key add
 # To verify that your key is installed correctly
 RUN apt-key fingerprint
 
-# Configure timezone to avoid interactive prompt
+# Configure timezone and keyboard type to avoid interactive prompt
 ENV TZ=Europe/Kiev
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
 COPY ./keyboard /etc/default/keyboard
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -yq openmodelica

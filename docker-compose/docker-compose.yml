@@ -6,6 +6,6 @@ services:
     tty: true
   opcqlwrapper:
     container_name: opcqlwrapper
-    build: git@github.com:AaltoIIC/OPC-UA-GraphQL-Wrapper.git
+    build: https://github.com/AaltoIIC/OPC-UA-GraphQL-Wrapper.git
     ports:
       - 8000:8000

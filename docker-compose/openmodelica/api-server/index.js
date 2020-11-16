@@ -20,11 +20,12 @@ app.route("/model/:name")
   .put((req, res) => {
     if (req.is('text/*')) {
       let name = req.params.name;
-      let fileHandle = fs.openSync("models/"+name, 'w');
+      let filepath = "models/"+name+".mo";
+      let fileHandle = fs.openSync(filepath, 'w');
       console.log("Writing content to file: " + req.body);
       console.log();
       fs.writeSync(fileHandle, req.body);
-      compile(fileHandle);
+      compile("models/BouncingBall.mo"); // filepath
       res.send('Putting model with name: ' + name);
     } else {
       console.log("Unexpected content");

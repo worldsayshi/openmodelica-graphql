@@ -41,3 +41,9 @@ val()
 # Run ocpua
 
 pip install PyQt5
+
+
+# Recipe command line
+
+omc +s modelname.mo
+make -f modelname.makefile
