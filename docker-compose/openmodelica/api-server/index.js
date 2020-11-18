@@ -51,14 +51,14 @@ app.route("/model/:name")
 
 app.post("/model/:name/start", (req, res) => {
   let name = req.params.name;
-  if(!(typeof modelsRuntime[name] === 'object' && yourVariable !== null)) {
+  if(!(typeof modelsRuntime[name] === 'object' && modelsRuntime[name] !== null)) {
     res.status(400).send({
       message: 'Not a known model: '+name
     });
     return;
   }
-  let filepath = "output/"+name;
-  let process = startModel(filepath);
+  // let filepath = "output/"+name;
+  let process = startModel("./"+name, { cwd: "output" });
   modelsRuntime[name] = {
     ...modelsRuntime[name],
     process,
@@ -68,7 +68,7 @@ app.post("/model/:name/start", (req, res) => {
 
 app.post("/model/:name/stop", (req, res) => {
   let name = req.params.name;
-  if(!(typeof modelsRuntime[name] === 'object' && yourVariable !== null)) {
+  if(!(typeof modelsRuntime[name] === 'object' && modelsRuntime[name] !== null)) {
     res.status(400).send({
       message: 'Not a known model: '+name
     });

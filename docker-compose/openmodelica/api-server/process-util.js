@@ -29,14 +29,14 @@ const run = (...spawnargs) => {
     console.log(`child process exited with code ${code}`);
   });
 
-/*  function stopChildProc(){
+  function stopChildProc(){
     cprocess.kill("SIGINT");
     process.exit(0);
     console.log("Stopping child process because parent process stopping.")
   }
 
   process.on('exit', stopChildProc);
-  process.on('SIGINT', stopChildProc);*/
+  process.on('SIGINT', stopChildProc);
   return cprocess;
 };
 
@@ -44,8 +44,8 @@ const compile = (filepath) => {
   run("bash", ["./compile_model.sh", filepath]);
 };
 
-const startModel = (filepath) => {
-  return run(filepath);
+const startModel = (filepath, opts) => {
+  return run(filepath, ["-embeddedServer=opc-ua"], { cwd: opts.cwd });
 };
 
 module.exports = {compile, startModel};

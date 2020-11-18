@@ -27,4 +27,4 @@ equation
 end BouncingBall2;
 EOF
 
-#curl -X PUT localhost:3000/model/BouncingBall2/start
+# curl -X POST localhost:3000/model/BouncingBall2/start
