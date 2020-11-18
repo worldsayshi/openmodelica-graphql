@@ -27,13 +27,16 @@ app.route("/model/:name")
       let filepath = "models/"+name+".mo";
       let fileHandle = fs.openSync(filepath, 'w');
       console.log("Writing content to file: " + req.body);
-      console.log();
-      fs.writeSync(fileHandle, req.body);
+      fs.writeSync(fileHandle, req.body+"\n");
+      console.log("Compiling...");
       compile(filepath);
       modelsRuntime[name] = modelsRuntime[name] || {};
       res.send('Putting model with name: ' + name);
     } else {
-      console.log("Unexpected content");
+      console.log("Unexpected content type");
+      res.status(400).send({
+        message: "Unexpected content type"
+      });
     }
   })
   /**

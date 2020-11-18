@@ -40,5 +40,6 @@ COPY api-server ./api-server
 RUN cd api-server && \
     npm install
 
-ENTRYPOINT ["node", "./api-server/index.js"]
+WORKDIR ./api-server
+ENTRYPOINT ["node", "./index.js"]
 # ENTRYPOINT ["OMShell-terminal"]
