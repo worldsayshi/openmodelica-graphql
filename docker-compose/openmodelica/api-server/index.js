@@ -2,7 +2,7 @@
 const express = require('express')
 const fs = require('fs');
 
-const {compile, startModel} = require('./process-util');
+const {compile, startModel, initModelRuntime} = require('./process-util');
 const app = express();
 const port = 3000;
 const bodyParser = require('body-parser');
@@ -12,9 +12,9 @@ fs.mkdirSync("models", { recursive: true });
 // app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
-let modelsRuntime = {
+let modelsRuntime = initModelRuntime({
 
-};
+});
 
 app.route("/model/:name")
   /**

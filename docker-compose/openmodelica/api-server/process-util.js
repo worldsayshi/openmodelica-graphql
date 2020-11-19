@@ -1,7 +1,8 @@
 
 
 const { spawn } = require('child_process');
-const path = require("path");
+const fs = require('fs');
+// const path = require("path");
 const process = require('process');
 
 /*
@@ -48,4 +49,15 @@ const startModel = (filepath, opts) => {
   return run(filepath, ["-embeddedServer=opc-ua"], { cwd: opts.cwd });
 };
 
-module.exports = {compile, startModel};
+const initModelRuntime = (modelRuntime) => {
+  let modelFiles = fs.readdirSync("models");
+  modelFiles.forEach(f => {
+    if (f.endsWith(".mo")) {
+      let name = f.replace(/\.[^/.]+$/, "");
+      modelRuntime[name] = {};
+    }
+  });
+  return modelRuntime;
+};
+
+module.exports = {compile, startModel, initModelRuntime};
