@@ -30,9 +30,9 @@ const run = (...spawnargs) => {
   });
 
   function stopChildProc(){
+    console.log("Stopping child process because parent process stopping.")
     cprocess.kill("SIGINT");
     process.exit(0);
-    console.log("Stopping child process because parent process stopping.")
   }
 
   process.on('exit', stopChildProc);
