@@ -46,7 +46,7 @@ const compile = (filepath) => {
 };
 
 const startModel = (filepath, opts) => {
-  return run(filepath, ["-embeddedServer=opc-ua"], { cwd: opts.cwd });
+  return run(filepath, ["-embeddedServer=opc-ua"/*, "-rt=1"*/], { cwd: opts.cwd });
 };
 
 const initModelRuntime = (modelRuntime) => {
