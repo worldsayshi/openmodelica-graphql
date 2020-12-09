@@ -17,8 +17,16 @@ export default gql`
   }
   
   type Mutation {
+    # Compile a model and start its process
     putModel(name: String, model: String): MutationResult
+    # Start a model process if not running and start the simulation
     startModel(name: String): MutationResult
+    # Stop the model simulation
     stopModel(name: String): MutationResult
+    # Pause a model simulation
+    pauseModel(name: String): MutationResult
+    # Restart a model process and leave the simulation paused
+    rewindModel(name: String): MutationResult
+    debugClient: MutationResult
   }
 `;

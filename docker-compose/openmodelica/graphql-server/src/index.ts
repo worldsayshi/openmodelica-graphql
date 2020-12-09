@@ -3,6 +3,7 @@ import fs from "fs";
 import typeDefs from "./typeDefs";
 import {ApolloServer} from "apollo-server";
 import {compile, initModelRuntime, startModel } from "./process-util";
+import {debugClient, startSimulation} from "./opcua-util";
 
 const resolvers = {
   Query: {
@@ -24,6 +25,11 @@ const resolvers = {
       console.log("Compiling...");
       compile(filepath);
       modelsRuntime[name] = modelsRuntime[name] || {};
+      let process = startModel("./"+name, { cwd: "output" });
+      modelsRuntime[name] = {
+        ...modelsRuntime[name],
+        process,
+      };
     },
     startModel: (_: {}, { name }: { name: string }) => {
       if(!(typeof modelsRuntime[name] === 'object' && modelsRuntime[name] !== null)) {
@@ -32,11 +38,7 @@ const resolvers = {
           message: 'Not a known model: '+name
         };
       }
-      let process = startModel("./"+name, { cwd: "output" });
-      modelsRuntime[name] = {
-        ...modelsRuntime[name],
-        process,
-      };
+      startSimulation({ name });
       return {
         ok: true,
         message: "Model started: " + name
@@ -46,7 +48,7 @@ const resolvers = {
       if(!(typeof modelsRuntime[name] === 'object' && modelsRuntime[name] !== null)) {
         return {
           ok: false,
-          message: 'Not a known model: '+name
+          message: 'Not a known model: '+name,
         };
       }
       modelsRuntime[name].process.kill();
@@ -54,6 +56,9 @@ const resolvers = {
         ok: true,
         message: "Model stopped: " + name,
       };
+    },
+    debugClient: async (_: {}, ) => {
+      await debugClient();
     },
   },
 };

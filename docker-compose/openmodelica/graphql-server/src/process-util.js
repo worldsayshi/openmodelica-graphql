@@ -41,15 +41,15 @@ const run = (...spawnargs) => {
   return cprocess;
 };
 
-const compile = (filepath) => {
+export const compile = (filepath) => {
   run("bash", ["./compile_model.sh", filepath]);
 };
 
-const startModel = (filepath, opts) => {
+export const startModel = (filepath, opts) => {
   return run(filepath, ["-embeddedServer=opc-ua"/*, "-rt=1"*/], { cwd: opts.cwd });
 };
 
-const initModelRuntime = (modelRuntime) => {
+export const initModelRuntime = (modelRuntime) => {
   let modelFiles = fs.readdirSync("models");
   modelFiles.forEach(f => {
     if (f.endsWith(".mo")) {
@@ -60,4 +60,4 @@ const initModelRuntime = (modelRuntime) => {
   return modelRuntime;
 };
 
-module.exports = {compile, startModel, initModelRuntime};
+// module.exports = {compile, startModel, initModelRuntime};

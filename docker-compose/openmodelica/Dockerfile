@@ -61,10 +61,10 @@ RUN apt-get install curl -y
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
 RUN apt-get install nodejs -y
 
-COPY api-server ./api-server
-RUN cd api-server && \
-    npm install
+COPY graphql-server ./graphql-server
+RUN cd graphql-server && \
+    npm install && npm run build
 
-WORKDIR ./api-server
-ENTRYPOINT ["node", "./index.js"]
+WORKDIR ./graphql-server
+ENTRYPOINT ["node", "./build/index.js"]
 # ENTRYPOINT ["OMShell-terminal"]
