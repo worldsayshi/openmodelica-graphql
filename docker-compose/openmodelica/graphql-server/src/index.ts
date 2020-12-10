@@ -30,6 +30,19 @@ const resolvers = {
         ...modelsRuntime[name],
         process,
       };
+      return {
+        ok: true,
+      };
+    },
+    wakeModel: (_: {}, { name }: { name: string }) => {
+      let process = startModel("./"+name, { cwd: "output" });
+      modelsRuntime[name] = {
+        ...modelsRuntime[name],
+        process,
+      };
+      return {
+        ok: true,
+      };
     },
     startModel: (_: {}, { name }: { name: string }) => {
       if(!(typeof modelsRuntime[name] === 'object' && modelsRuntime[name] !== null)) {

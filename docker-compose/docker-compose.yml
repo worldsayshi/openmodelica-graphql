@@ -5,7 +5,7 @@ services:
     build: ./openmodelica
     tty: true
     ports:
-      - 3000:3000
+      - 4000:4000
   opcqlwrapper:
 #    network_mode: host
     container_name: opcqlwrappers

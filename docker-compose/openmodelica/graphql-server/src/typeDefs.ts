@@ -28,5 +28,7 @@ export default gql`
     # Restart a model process and leave the simulation paused
     rewindModel(name: String): MutationResult
     debugClient: MutationResult
+    # Start a model process
+    wakeModel(name: String): MutationResult
   }
 `;
