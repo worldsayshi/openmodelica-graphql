@@ -1,6 +1,6 @@
 
 
-# Setup
+# Setup2
 
 ## Download and install Open Modelica
 
