@@ -1,4 +1,12 @@
 
+# Setup 3
+
+    $ cd docker-compose
+    $ docker-compose up
+    # New terminal
+    $ cd graphql-server
+    $ npm install
+    $ npm test
 
 # Setup2
 
